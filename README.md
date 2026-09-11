@@ -1,74 +1,76 @@
-# TrueMerit - AI-Powered Merit-Based Hiring Platform
+# TrueMerit — AI-Assisted Hiring Platform
 
-TrueMerit is a disruptive full-stack platform designed to revolutionize recruitment by evaluating candidates based on objective, merit-driven data rather than just traditional resumes. It leverages AI to verify certifications and integrates real-world signals like GitHub activity and project complexity.
+TrueMerit is a collaborative full-stack hiring platform that explores merit-oriented candidate evaluation using verified credentials and technical signals.
 
-## 🚀 Key Features
+## What it demonstrates
 
-- **AI-Driven Certificate Verification**: Integrated Gemini-powered AI forensics (Agent 7) to detect fraudulent or tampered certifications, ensuring platform integrity.
-- **Dynamic Merit Scoring**: A weighted algorithm that calculates a candidate's "Merit Score" by analyzing:
-  - GitHub Activity & Repository Quality
-  - Project Complexity & Tech Stack
-  - Academic Performance
-  - Verified Industry Certifications
-- **Multi-Role Dashboards**: 
-  - **Students**: Upload projects, verify certificates, and track merit growth.
-  - **Recruiters**: Browse pre-verified, high-scoring talent with deep insights into their technical abilities.
-- **Robust File Management**: Production-grade handling of resumes and sensitive documents.
+- **AI-assisted certificate verification** using Google Gemini
+- **Merit scoring** using signals such as GitHub activity, repository/project quality, academic performance and verified certifications
+- **Separate student and recruiter workflows**
+- **Authentication and protected application flows**
+- **Resume and document management**
+- **Full-stack architecture** across React, Node.js, Express and MongoDB
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend**: React.js, Vite, Tailwind CSS, Heroicons
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (Mongoose ODM)
-- **AI/ML**: Google Gemini AI (for certificate forensics)
-- **Authentication**: JWT & Secure Cookie-based auth
+| Layer | Technologies |
+|---|---|
+| Frontend | React, Vite, Tailwind CSS, Heroicons |
+| Backend | Node.js, Express.js |
+| Database | MongoDB, Mongoose |
+| AI | Google Gemini |
+| Authentication | JWT, secure cookies |
 
-## 📦 Installation & Setup
+## My Contribution
 
-### Prerequisites
-- Node.js (v16+)
-- MongoDB (Local or Atlas)
-- Gemini API Key
+This was a **team project**. My primary responsibility was **frontend engineering and UI/UX** — structuring the user-facing application, building dashboard and interface components, and connecting frontend flows with the platform's backend APIs.
 
-### Backend Setup
-1. Navigate to the `backend` directory:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file and add your credentials:
-   ```env
-   MONGO_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   GEMINI_API_KEY=your_gemini_api_key
-   ```
-4. Start the server:
-   ```bash
-   npm run dev
-   ```
+The backend and AI systems were developed collaboratively by the team, so this repository is presented as evidence of **full-stack collaboration and frontend engineering**, rather than as an independent claim over every subsystem.
 
-### Frontend Setup
-1. Navigate to the `frontend` directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite development server:
-   ```bash
-   npm run dev
-   ```
+## Product Flow
 
-## 👥 Meet the Team
+```text
+                 TrueMerit
+                    │
+             Authentication
+                    │
+          ┌─────────┴─────────┐
+          │                   │
+       Student             Recruiter
+          │                   │
+   Profile + Docs       Candidate Review
+          │                   │
+          └─────────┬─────────┘
+                    │
+          Verification + Scoring
+                    │
+             Hiring Insights
+```
 
-- **Aditya Bansal** - Backend & AI Systems Lead ([GitHub](https://github.com/Adityaslas09))
-- **Shreya Chauhan** - Frontend & UI/UX Specialist
-- **Aayush Prabhakar** - Integration & AI Features Engineer
+## Why this project matters
 
-## 📜 License
-This project is for educational and portfolio purposes.
+TrueMerit combines application engineering with AI-assisted verification to explore a more structured approach to candidate evaluation. It demonstrates experience with **React-based product development, API-integrated interfaces, authentication, data-driven workflows and collaborative full-stack development**.
+
+## Project Context
+
+Built collaboratively for educational and portfolio purposes. Individual responsibilities are stated explicitly above.
+
+## Local Development
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Configure the required MongoDB, JWT and Gemini credentials through environment variables before running the application.
